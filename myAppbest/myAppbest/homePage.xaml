@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:myAppbest"
+             x:Class="myAppbest.homePage">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Text="Add" 
+                     Icon="add.png"
+                     Clicked="ToolbarItem_Clicked"/>
+    </TabbedPage.ToolbarItems>
+    <local:HistoryPage Title="HISTORY"
+                       Icon="home.png"/>
+    <local:MapPage Title="MAP"
+                   Icon="map.png"/>
+    <local:ProfilePage Title="PROFILE"
+                       Icon="person.png"/>
+
+
+
+
+
+
+</TabbedPage>
