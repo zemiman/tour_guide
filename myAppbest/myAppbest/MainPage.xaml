@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:myAppbest"
+             x:Class="myAppbest.MainPage">
+     
+
+    <StackLayout VerticalOptions="Center" Margin="26,10" BackgroundColor="{StaticResource formColor}">
+        <!-- Place new controls here -->
+        <Image x:Name="iconImage"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand" Margin="0,0,0,8"
+               HeightRequest="52"/>
+        <Entry x:Name="emailEntry" Placeholder="Email or username" 
+               Keyboard="Email" HorizontalTextAlignment="Center"/>
+        <Entry x:Name="passwordEntry" Placeholder="password" IsPassword="True" HorizontalTextAlignment="Center"/>
+        
+        <Button Text="Log in" Clicked="Button_Clicked"
+                 Margin="29,10" Style="{StaticResource normalButton}"/>
+        <Button Text="Sin Up" Clicked="Button_Clicked_1"
+                 Margin="29,32" Style="{StaticResource normalButton}"/>
+        <Label x:Name="inputValidation" Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"  Margin="2,1,2,14"/>
+    </StackLayout>
+
+</ContentPage>
